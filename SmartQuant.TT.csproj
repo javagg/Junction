@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files\SmartQuant Ltd\OpenQuant 2014\SmartQuant.TT.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67E42E09-4FB9-4E85-988C-671E05F13AAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SmartQuant.TT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.5323.20946</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SmartQuant.TT</RootNamespace>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QuickFix">
+      <HintPath>packages\QuickFix.Net.1.5.0\lib\QuickFix.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="SmartQuant">
+      <HintPath>..\..\..\Program Files\SmartQuant Ltd\OpenQuant 2014\SmartQuant.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SmartQuant.TT\BadEntryException.cs" />
+    <Compile Include="SmartQuant.TT\ContractData.cs" />
+    <Compile Include="SmartQuant.TT\Entry.cs" />
+    <Compile Include="SmartQuant.TT\InstrumentDefinitionRecord.cs" />
+    <Compile Include="SmartQuant.TT\MarketDataRecord.cs" />
+    <Compile Include="SmartQuant.TT\MDTracker.cs" />
+    <Compile Include="SmartQuant.TT\Price.cs" />
+    <Compile Include="SmartQuant.TT\PriceComparer.cs" />
+    <Compile Include="SmartQuant.TT\PriceSortOrder.cs" />
+    <Compile Include="SmartQuant.TT\TTFIX.cs" />
+    <Compile Include="SmartQuant.TT\TTFIXApplication.cs" />
+    <Compile Include="SmartQuant.TT\TTSessionInfo.cs" />
+    <Compile Include="SmartQuant.TT\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="SmartQuant.FIXApplication.csproj">
+      <Project>{3A29AA44-B26B-4A38-8979-777DF6F0C0EF}</Project>
+      <Name>SmartQuant.FIXApplication</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

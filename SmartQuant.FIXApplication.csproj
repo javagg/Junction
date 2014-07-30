@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files\SmartQuant Ltd\OpenQuant 2014\SmartQuant.FIXApplication.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A29AA44-B26B-4A38-8979-777DF6F0C0EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SmartQuant.FIXApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.5323.20946</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SmartQuant.FIXApplication</RootNamespace>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QuickFix">
+      <HintPath>packages\QuickFix.Net.1.5.0\lib\QuickFix.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="SmartQuant">
+      <HintPath>..\..\..\Program Files\SmartQuant Ltd\OpenQuant 2014\SmartQuant.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.Xml">
+      <HintPath>..\..\..\Program Files\SmartQuant Ltd\OpenQuant 2014\SmartQuant.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SmartQuant.FIXApplication\FIXTypeConverter.cs" />
+    <Compile Include="SmartQuant.FIXApplication\BeginString.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Helper.cs" />
+    <Compile Include="SmartQuant.FIXApplication\InfoBase.cs" />
+    <Compile Include="SmartQuant.FIXApplication\FileInfoBase.cs" />
+    <Compile Include="SmartQuant.FIXApplication\FileLoggingInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\FileStorageInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\InfoType.cs" />
+    <Compile Include="SmartQuant.FIXApplication\TypeInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\LoggingInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\MySQLInfoBase.cs" />
+    <Compile Include="SmartQuant.FIXApplication\MySQLLoggingInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\MySQLStorageInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\OdbcInfoBase.cs" />
+    <Compile Include="SmartQuant.FIXApplication\OdbcLoggingInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\OdbcStorageInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\PostgreSQLInfoBase.cs" />
+    <Compile Include="SmartQuant.FIXApplication\PostgreSQLLoggingInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\PostgreSQLStorageInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\SessionInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\SessionType.cs" />
+    <Compile Include="SmartQuant.FIXApplication\StorageInfo.cs" />
+    <Compile Include="SmartQuant.FIXApplication\InitiatorMode.cs" />
+    <Compile Include="SmartQuant.FIXApplication\NullLogFactory.cs" />
+    <Compile Include="SmartQuant.FIXApplication\QuickFIXApplication.cs" />
+    <Compile Include="SmartQuant.FIXApplication\QuickFIXProvider.cs" />
+    <Compile Include="SmartQuant.FIXApplication\SessionIDKey.cs" />
+    <Compile Include="SmartQuant.FIXApplication\SettingError.cs" />
+    <Compile Include="SmartQuant.FIXApplication\SettingErrorList.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Design\BeginStringEditor.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Design\SessionsEditor.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Design\SessionsTypeConverter.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Xml\InfoXmlDocument.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Xml\SessionListXmlNode.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Xml\SessionsXmlDocument.cs" />
+    <Compile Include="SmartQuant.FIXApplication\Xml\SessionXmlNode.cs" />
+    <Compile Include="SmartQuant.FIXApplication\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
